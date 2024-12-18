@@ -99,7 +99,7 @@ jobs:
           # sudo cp -f my_files/testkey.xml "PlayIntegrityFix/Leaked Keyboxs/💀/testkey.xml"
           
           # Duyệt qua các tệp XML và thực hiện thay thế
-          for XML_FILE in "PlayIntegrityFix/Leaked Keyboxs/💀/"*.xml; do
+          for XML_FILE in "my_files/"*.xml; do
             # Lấy thông tin từ tệp XML
             NumberOfKeyboxes=$(xmlstarlet sel -t -v "//NumberOfKeyboxes" "$XML_FILE")
             DeviceID=$(xmlstarlet sel -t -v "//Keybox/@DeviceID" "$XML_FILE")
